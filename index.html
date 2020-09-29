@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home | Gamers Night</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="header">
+        <img src="assets/images/liquid logo.webp">
+        <div class="controllers">
+            <span onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth', block: 'center' }); ">Home</span>
+            <span onclick="document.getElementById('partners').scrollIntoView({ behavior: 'smooth', block: 'center' }); ">Our Partners</span>
+            <span onclick="document.getElementById('upcoming-events').scrollIntoView({ behavior: 'smooth', block: 'center' }); ">Upcoming Events</span>
+            <span onclick="document.getElementById('ping_test').scrollIntoView({ behavior: 'smooth', block: 'center' }); ">Ping Test</span>
+            <span onclick="document.getElementById('past_events').scrollIntoView({ behavior: 'smooth', block: 'center' }); ">Past Events</span>
+            <span onclick="document.getElementById('news_and_articles').scrollIntoView({ behavior: 'smooth', block: 'start' }); ">News and Articles</span>
+            <span onclick="document.getElementById('communities').scrollIntoView({ behavior: 'smooth', block: 'start' }); ">Communities</span>
+        </div>
+    </div>
+    <div id="home" class="intro">
+        <div class="intro-image">
+            <!-- the background of this should be the image -->
+        </div>
+        <div class="intro-right">
+            <h1>Liquid for Gamers</h1>
+            <h6>Connect Play, Learn . Africa</h6>
+            <p>
+                Liquid Telecom has the fastest, largest most interconnected network on the continent of Africa.  By connecting to homes, ISPs, Mobile Telephone Networks, Global and African Data centres, content delivery networks, we are the infrastructure that makes gaming in Africa possible.
+
+                <br>
+
+                At the very core of our business is our belief that every individual on the continent has the right to be connected. We believe that the power of technology will create better and brighter lives for everyone.
+
+                ​<br>
+
+                Liquid for Gamers brings together the players and communities that we connect and support.
+
+                ​<br>
+
+                Put simply, we connect people.
+            </p>
+        </div>
+
+    </div>
+    <div id="partners" class="slider-container">
+        <div class="intro-right slider-left">
+            <h1>African Partners in Gaming</h1>
+            <p>Liquid Telecom partners with the best and brightest players in the world of e-sports, video game developers, game and animation communities, gaming cafes.  All of these connected over one low latency pan African network, linking data centers in Africa where we host servers for online multiplayer gaming.</p>
+        </div>
+        <div class="slider-right">
+            <p class="prev" style="cursor: pointer" onclick="plusSlides(-1)">&#10094;</p>
+                <div class="sliderImage" onclick="window.open('http://psg.co.ke/', '_self')" style="background-image: url('assets/images/Pic 1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+">
+
+                </div>
+                <div class="sliderImage" onclick="window.open('https://www.nerdotaku.org/', '_self')" style="background-image: url('assets/images/pic 2.png');  background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;">
+
+                </div>
+
+                <div class="sliderImage" onclick="window.open('https://ludique.works/', '_self')" style="background-image: url('assets/images/pic 3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;">
+
+                </div>
+                <div class="sliderImage" onclick="window.open('https://www.gamersnights.com/servers', '_self')" style="background-image: url('assets/images/Pic 4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;">
+
+                </div>
+            <p class="next" style="cursor: pointer" onclick="plusSlides(1)">&#10095;</p>
+        </div>
+    </div>
+    <h1 style="text-align:center">Upcoming Events</h1>
+    <div id="upcoming-events" class="upcoming-events-trailing">
+        <div class="past-events-title" style="background-image: url('assets/images/Event1.jpg'); background-color:#222121">
+            <!-- give this div a background image -->
+            <div class="light-fg event-card pnk">
+
+                <h2>Rainbow Six Siege</h2>
+                <p>October, 2020</p>
+                <button id="myBtn">
+                    Register
+                </button>
+            </div>
+        </div>
+        <div class="past-events-title" style="background-image: url('assets/images/Event2.jpg'); background-color:#222121">
+            <!-- give this div a background image -->
+            <div class="light-fg event-card pnk">
+                <h2>Call of Duty (Restricted*)</h2>
+                <p>October, 2020</p>
+                <button id="myBtnc">
+                    Register
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="upcoming-events-hidden" class="upcoming-events" hidden>
+        <h1>No upcoming events at the moment</h1>
+    </div>
+    <div id="ping_test" class="ping-test">
+        <div class="intro-right ping-test-left">
+            <h1>PSG LAN Speed Test</h1>
+            <p>
+                Liquid's Network is one of the fastest and the largest most interconnected network across the African continent.
+
+                We provide best network connections to Gamers across African continent.
+            </p>
+        </div>
+        <div class="ping-test-right">
+            <video autoplay loop muted>
+                <source src="https://ambientgames.blob.core.windows.net/ltk/PSG%20LAN%20Party%20Speed%20Test.mp4" type="video/mp4">
+                <source src="https://ambientgames.blob.core.windows.net/ltk/PSG%20LAN%20Party%20Speed%20Test.mp4" type="video/mp4">
+            </video>
+            <h1></h1>
+        </div>
+    </div>
+    <div id="past_events" class="past-events">
+        <div class="past-events-title">
+            <!-- give this div a background image -->
+            <div class="light-fg">
+                <h1>Past Events</h1>
+                <h2>What's the buzz</h2>
+            </div>
+        </div>
+        <div class="past-events-trailing">
+            <div class="event-card pnk">
+                <div class="event-card-image" style="background-image: url('assets/images/ggj20.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>Nairobi Global Jam 2020</h2>
+                <p>January, 2020</p>
+                <a href="https://www.youtube.com/watch?v=2PL_D5z3-Fk&ab_channel=IsaackAbdiHakim">
+                    <button>
+                        Watch
+                    </button>
+                </a>
+
+            </div>
+            <div class="event-card">
+                <div class="event-card-image" style="background-image: url('assets/images/GGJ2019.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>Nairobi Global Game Jam 2019</h2>
+                <p>January, 2019</p>
+                <a href="https://youtu.be/vc9ikybwtN0">
+                    <button>
+                        Watch
+                    </button>
+                </a>
+            </div>
+            <div class="event-card pnk">
+                <div class="event-card-image" style="background-image: url('assets/images/lusaka19.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>LSCon Comic 2019-Lusaka</h2>
+                <p>September, 2019</p>
+                <a href="https://youtu.be/cU4g4t0sQA8">
+                    <button>
+                        Watch
+                    </button>
+                </a>
+            </div>
+            <div class="event-card">
+                <div class="event-card-image" style="background-image: url('assets/images/ntv.png')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>Naicon Event 2017 - Nairobi</h2>
+                <p>August 2017</p>
+                <a href="https://www.youtube.com/watch?v=iot_vlUFbIM">
+                    <button>
+                        Watch
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="news_and_articles" class="news_and_articles">
+        <h1>African Gaming News and Articles</h1>
+        <span>
+            Not sure which game to embark on next? Look no further, Gamers Night has tons of reviews so you can make an informed choice. Our team carefully reviews every single game, so you can be sure anything recommended will be a great experience. If your favorite is missing let us know, we’re always looking for new games to try out!
+        </span>
+        <div class="past-events-trailing articles_trailing">
+            <div class="event-card pnk">
+                <div class="event-card-image" style="background-image: url('assets/images/A2.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h3>
+                    Liquid Telecom to support developers across Africa in 48-hour video game building challenge.
+                </h3>
+                <p>January, 2019</p>
+                <a href="https://africabusinesscommunities.com/tech/tech-news/liquid-telecom-to-support-developers-across-africa-in-48-hour-video-game-building-challenge/">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+            <div class="event-card">
+                <div class="event-card-image" style="background-image: url('assets/images/A4.jpeg')">
+                    <!-- background image should be here -->
+                </div>
+                <h3>
+                    Liquid Telecom at the forefront in supporting The first Going ‘Glocal’ Nairobi Game Jam 2019.
+                </h3>
+                <p>January, 2019</p>
+                <a href="https://medium.com/ludiqueworksmedia/going-glocal-nairobi-gamejam-2019-40b247d36d3e">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+            <div class="event-card pnk">
+                <div class="event-card-image" style="background-image: url('assets/images/A6.jpeg')">
+                    <!-- background image should be here -->
+                </div>
+                <h3>
+                    Liquid Telecom, LudiqueWorks and BlackRhinoVR at the Global MR Event.
+                </h3>
+                <p>November, 2019</p>
+                <a href="https://medium.com/ludiqueworksmedia/https-medium-com-ludiqueworksmedia-globalmrbootcamp19-7b116696c12a">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+            <div class="event-card">
+                <div class="event-card-image" style="background-image: url('assets/images/A2b.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h3>
+                    Liquid Telecom at the forefront of promoting e-gaming events across the entire African Continent.
+                </h3>
+                <p>July, 2018</p>
+                <a href="https://nairobigarage.com/e-gaming-rises-from-east-africa/">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="news_trailing">
+            <div class="event-card">
+                <div class="event-card-image" style="background-image: url('assets/images/thomas.png')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>CNN African Voices features African gaming community space in Nairobi</h2>
+                <a href="https://www.youtube.com/watch?v=3c8HhUfX7L4&feature=youtu.be">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+            <div class="event-card pnk">
+                <div class="event-card-image" style="background-image: url('assets/images/V3.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>Virtual Reality is the next edge of Computing. A reaction to Oculus Rift Device - GamersNight</h2>
+                <a href="https://www.youtube.com/watch?v=0Ignn19Ajvs">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+            <div class="event-card">
+                <div class="event-card-image" style="background-image: url('assets/images/V4.jpg')">
+                    <!-- background image should be here -->
+                </div>
+                <h2>Liquid Telecom Supporting Nairobi Comic Con 2019 Event at Sarit Center</h2>
+                <a href="https://www.youtube.com/watch?v=z4S-vnpw4sE">
+                    <button>
+                        Read More
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="communities" class="communitites_and_social">
+        <h1>Communities and Social</h1>
+        <h2>Directory of communities</h2>
+        <h3>Want to get together with other players and communities in Africa?  There are lots of Discord, Whatsapp, Telegram, Facebook Communities out there that are free and open to join.  Connect and play with other like minded players in your area, or in other African Nations. Then play.</h3>
+        <h2>Discord</h2>
+        <div class="communities">
+
+            <a href="https://discord.com/invite/ua8dpW2" style="text-decoration:none">
+                <div class="chess-white">
+                    <p>GamersNights</p>
+                </div>
+            </a>
+            <a href="https://discord.me/254GAMERS" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>254 gamers</p>
+                </div>
+            </a>
+            <a href="https://discord.gg/8RNTDpw" style="text-decoration:none;">
+
+                <div class="chess-white">
+                    <p>Watu Wa Gaming</p>
+                </div>
+            </a>
+            <a href="https://t.co/5cisfbLh7e?amp=1" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>Esports Africa</p>
+                </div>
+            </a>
+
+            <a href="https://t.co/vOXVE5eNIN?amp=1" style="text-decoration:none;  color:white">
+
+                <div class="chess-black">
+                    <p>South African Gaming</p>
+                </div>
+            </a>
+
+            <a href="https://discord.com/invite/byhBrpP" style="text-decoration:none;">
+
+                <div class="chess-white">
+                    <p>The BattleGrounds</p>
+                </div>
+            </a>
+
+            <a href="https://discord.com/invite/5Bb9phP" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>TEKKEN 254</p>
+                </div>
+            </a>
+
+            <a href="https://discord.com/invite/JTfgT7R" style="text-decoration:none;">
+
+                <div class="chess-white">
+                    <p>PUBG Ghana</p>
+                </div>
+            </a>
+
+            <a href="https://discord.com/invite/9EweKNC" style="text-decoration:none">
+
+                <div class="chess-white">
+                    <p>Veterans Online</p>
+                </div>
+            </a>
+
+            <a href="https://discord.com/invite/ErhtpD4" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>Mutants Vs. Pirates</p>
+                </div>
+            </a>
+
+            <a href="https://discord.gg/FevAChP" style="text-decoration:none">
+
+                <div class="chess-white">
+                    <p>Battlefield SA</p>
+                </div>
+            </a>
+
+            <a href="https://discord.gg/S9jTcFH" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>Official Unity Discord</p>
+                </div>
+            </a>
+
+        </div>
+        <h2>Facebook</h2>
+        <div class="communities">
+            <a href="https://web.facebook.com/groups/1991730454453604/?ref=contextual_unjoined_mall_chaining%20COD%20South%20Africa" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>FIFA South Africa</p>
+                </div>
+            </a>
+
+            <a href="https://web.facebook.com/groups/1991730454453604/?ref=contextual_unjoined_mall_chaining%20COD%20South%20Africa" style="text-decoration:none">
+
+                <div class="chess-white">
+                    <p>COD South Africa</p>
+                </div>
+            </a>
+
+            <a href="https://web.facebook.com/groups/1436408383136734/?ref=groups_discover_tab%20PUBG%20Mobile%20Esports" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>PUBG Mobile Esports</p>
+                </div>
+            </a>
+
+            <a href="https://web.facebook.com/groups/KGameDev/" style="text-decoration:none">
+
+                <div class="chess-white">
+                    <p>Kenya GameDev</p>
+                </div>
+            </a>
+
+        </div>
+        <div class="communities final_comm">
+            <h2>Telegram</h2>
+            <h2>Instagram</h2>
+            <h2>Twitter</h2>
+            <h2>Youtube</h2>
+            <a href="https://t.me/AfricaGameDevelopers" style="text-decoration:none">
+
+                <div class="chess-white">
+                    <p>AfricanGameDeveloper</p>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/xthewatchmen/" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>xTheWatchmen</p>
+                </div>
+            </a>
+            <a href="https://twitter.com/xTheWatchmen" style="text-decoration:none">
+
+                <div class="chess-white">
+                    <p>xTheWatchmen</p>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCE41Puq_ghrspaK9rM4JZ3g" style="text-decoration:none; color:white">
+
+                <div class="chess-black">
+                    <p>xTheWatchmen</p>
+                </div>
+            </a>
+        </div>
+        <button id="myBtncom">
+            Submit your community
+        </button>
+    </div>
+    <div class="footer">
+        <div class="center">
+            <div class="icons">
+                <img src="assets/images/liquid logo.webp">
+
+            </div>
+        </div>
+        <span>©2020 by Liquid Telecom</span>
+
+    </div>
+
+
+    <style>
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #D0417E;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 2px 16px;
+        }
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #009CDE;
+            color: white;
+        }
+    </style>
+
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Liquid Gaming - Rainbow Six Siege Tournament 2020</h2>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdF_hz40DnGRQDGdaITDPbVXBqYqoJOQ2KAC03FTdJvyaSIHw/viewform?embedded=true" style="width:100%; height:450px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="modal-footer">
+                <h3>Connect | Play | Win</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myModalc" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Liquid Gaming - Corporate CS GO Tournament 2020</h2>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfo4SSbBXiQE7Rz8H7EnDpg0rWRm6XUHP6f3g6TxhOZZcJT1w/viewform?embedded=true" style="width:100%; height:450px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="modal-footer">
+                <h3>Connect | Play | Win</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myModalcom" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add your community</h2>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScshLyk8W4LYFeipM1QLWiqODt7pj2dUAtD_Z3euJbJuEpOaA/viewform?embedded=true" style="width:100%; height:450px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modalc = document.getElementById("myModalc");
+        var modalcom = document.getElementById("myModalcom");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btnc = document.getElementById("myBtnc");
+        var btncom = document.getElementById("myBtncom");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var spanc = document.getElementsByClassName("close")[1];
+        var spancom = document.getElementsByClassName("close")[2];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        btnc.onclick = function () {
+            modalc.style.display = "block";
+        }
+        btncom.onclick = function () {
+            modalcom.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+
+        }
+        spanc.onclick = function () {
+            modalc.style.display = "none";
+        }
+        spancom.onclick = function () {
+            modalcom.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal || event.target == modalc || event.target == modalcom) {
+                modal.style.display = "none";
+                modalc.style.display = "none";
+                modalcom.style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+    <script>
+        window.onload = function () {
+            window.setInterval(function () {
+                plusSlides(1);
+            }, 4000);
+
+        }
+        function showSlides(n) {
+
+            var i;
+            var slides = document.getElementsByClassName("sliderImage");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+
+        }
+    </script>
+
+</html>
